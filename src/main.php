@@ -19,7 +19,7 @@ if (!function_exists('array_merge_recursive_distinct')) {
 	 * @param array $Source
 	 * @return array
 	 */
-	function array_merge_recursive_distinct(array $Original, array $Source) {
+	function array_merge_recursive_distinct(array $Original, array $Source): array {
 		foreach ($Source as $key => $value) {
 			if (is_array($value) && isset($Original[$key]) && is_array($Original[$key])) {
 				$Original[$key] = array_merge_recursive_distinct($Original[$key], $value);

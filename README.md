@@ -15,6 +15,7 @@ composer require able/fixes
 * preg_count
 
 Extends PCRE functions set. Return the count of matches given by a pattern.
+
 Declaration:
 
 ```

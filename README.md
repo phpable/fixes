@@ -16,7 +16,8 @@ composer require able/fixes
 #### PCRE functions
 * preg_count
 
-The function returns the count of matches found by a pattern. 
+Takes two arguments and returns the count of matches found by a pattern. 
+The behavior is identical to the standard ```preg_replace``` function.
 
 Declaration:
 

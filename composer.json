@@ -2,11 +2,11 @@
 	"name": "able/fixes",
 	"type": "library",
 	"keywords": ["phpable", "fixes"],
-	"description": "PHP standard library extending",
+	"description": "The bunch of functions extending the PHP standard library.",
 	"license": "MIT",
 	"authors": [
 		{
-			"name": "hacpaka",
+			"name": "Kassius Kress",
 			"email": "hacpaka@kamora.vn"
 		}
 	],

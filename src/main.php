@@ -33,3 +33,17 @@ if (!function_exists('array_merge_recursive_distinct')) {
 		return $Original;
 	}
 }
+
+if (!function_exists('file_purge')) {
+
+	/**
+	 * @param string $filename
+	 * @param int $flags
+	 * @param resource|null $context
+	 *
+	 * @return false|int
+	 */
+	function file_purge(string $filename, int $flags = 0, $context = null) {
+		return file_put_contents($filename, '', $flags & ~FILE_APPEND, $context);
+	}
+}

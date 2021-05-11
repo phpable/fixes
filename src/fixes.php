@@ -43,7 +43,7 @@ if (!function_exists('file_purge')) {
 	 *
 	 * @return false|int
 	 */
-	function file_purge(string $filename, int $flags = 0, $context = null) {
+	function file_purge(string $filename, int $flags = 0, $context = null): false|int {
 		return file_put_contents($filename, '', $flags & ~FILE_APPEND, $context);
 	}
 }

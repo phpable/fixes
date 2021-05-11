@@ -2,7 +2,7 @@
 The bunch of functions extending the PHP standard library.
 
 ## Requirements
-* PHP >= 7.2.0
+* PHP >= 8.0.0
 
 ## Install
 There's a simple way to install ```able/fixes``` into your project via [Composer](http://getcomposer.org):
@@ -30,8 +30,16 @@ Example:
 ```php
 $count = preg_count('/%[^%]/', '|%s|%s|%%|');
 echo  $count;
+
 // 2
 ```
+
+#### Array functions
+* array_merge_recursive_distinct(array $Original, array $Source): array
+
+
+#### Filesystem functions
+* file_purge(string $filename, int $flags = 0, $context = null): false|int
 
 
 ## License

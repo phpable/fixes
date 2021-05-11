@@ -11,11 +11,11 @@
 		}
 	],
 	"require": {
-		"php": ">=7.4.0"
+		"php": ">=8.0.0"
 	},
 	"autoload": {
 		"files": [
-			"src/main.php"
+			"src/fixes.php"
 		]
 	}
 }
